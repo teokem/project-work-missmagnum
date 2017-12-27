@@ -1,14 +1,18 @@
-# Project Work for Reproducible and Interactive Data Science
+# User Guide
 
-This is an empty repository for the project work
-of the course "Reproducible and Interactive Data Science".
+After miniconda/anaconda installation you need to install [**Keras**](https://keras.io/) package. To be able to save models the latest keras version is needed:
+```bash
+pip install --upgrade --no-deps keras
+```
+The enviroment yaml file has been defined in data directory.
 
-## Tasks
+```bash
+conda env create -f data/vae_env.yml
+source activate vae_env
+```
 
-1. Upload your project notebook to this repository. For a brief introduction to git repositories, see [here](https://guides.github.com/activities/hello-world/#commit).
-2. Notify your referees via email that your notebook is ready to be checked
-3. Your two referees will file their reports as Github _issues_ on your project's Github page. When refereeing, remember to consider the [project criteria](http://github.com/mlund/jupyter-course) and try to give constructive feedback that will improve the notebook.
+
 
 ## Note
 
-Please save your project when the course finished as we may delete it before the next course event.
+To be able to have interactive 3D plots in this notebook, matplotlib backend has been changed. To transfer this notebook to publication ready quality one can change the matplotlib setting and define nested subplot.
