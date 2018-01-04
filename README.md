@@ -8,7 +8,7 @@ The enviroment yaml file has been defined in data directory.
 
 ```bash
 conda env create -f data/vae_env.yml
-source activate vae_env
+source activate env_vae
 ```
 
 
